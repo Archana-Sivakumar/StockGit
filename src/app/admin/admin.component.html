@@ -1,0 +1,11 @@
+<div class="container">
+    <div *ngIf="fileStatus==true">
+       {{uploadResponse}}
+    </div>
+        
+        <input 
+            type="file" 
+            (change)="uploadFile($event)"
+        >
+</div>  
+
